@@ -6,6 +6,7 @@
 	<!-- Launch other relevant files-->
 	<include file="$(find ashwini)/launch/robot_description.launch"/>
 	<include file="$(find ashwini)/launch/waypoint.launch"/>
+	<include file="$(find ashwini)/launch/slam_navigation.launch"/>
 
 	<!-- World File -->
 	<arg name="world_file" default="$(find ashwini)/worlds/empty.world"/>
@@ -20,7 +21,7 @@
 	</include>
 	
 	<node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_dummy_root"
-      args="0 0 0 0 0 0 odom dummy_root" />
+      args="0 0 0 0 0 0 odom dummy_root " />
 
 	<!-- Spawn My Robot -->
 	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"

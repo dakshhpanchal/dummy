@@ -90,7 +90,7 @@
       <wheelAcceleration>1.0</wheelAcceleration> <!-- Adjust if needed -->
       <wheelTorque>5.0</wheelTorque> <!-- Adjust if needed -->
       <odometrySource>world</odometrySource> <!-- Use "encoder" if needed -->
-      <publishTf>false</publishTf>
+      <publishTf>true</publishTf>
     </plugin>
   </gazebo>
 
